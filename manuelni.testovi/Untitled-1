@@ -1,0 +1,8 @@
+Boundary Value Analysis spada u jednu od tehnika Black Box testing-a.
+ Ona je ustvari analiza granicnih vrednosti i najcesce se koristi. 
+S obzirom da se dosta gresaka moze pojaviti kada se kao ulazni podaci koriste neke vrednosti
+ koje su na granicnim vrednostima. 
+Trebalo bi ispitati ponasanje softvera oko granice (+1, -1).
+ Ova tehnika nije primenjiva kod opcionih polja. Takodje ne moze se primeniti kod Boolean vrednosti. 
+Boundrary Value Analysis bi se u nasem zadatku mogla primeniti kod unosa predmeta od strane administratora gde 
+uneti naziv ne sme biti kraci od 3 slova niti duzi od 40. 
