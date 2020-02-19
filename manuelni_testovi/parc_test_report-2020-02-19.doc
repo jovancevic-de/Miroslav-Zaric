@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>testreport Suite za parcijalni</title>
+<link type="text/css" rel="stylesheet" href="http://localhost/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo" height="53" src="http://localhost/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></p></div>
+<div class="doc_title"><p>Test Plan Execution Report</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Parcijalni testiranje<br/>Test Plan: Plan parcijalni testiranje<br/>Test Suite: Suite za parcijalni</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 19/02/2020</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="doclevel" >Test Project: Parcijalni testiranje</h1>
+<div class="txtlevel"><p>
+	Testiranje studentske sluzbe za parcijalni test</p></div>
+ <br/><h1 class="doclevel" style="page-break-before: avoid;"  >Test Plan: Plan parcijalni testiranje</h1>
+<div class="txtlevel"><p>
+	Testiranje upravljanja korisnicima</p></div>
+ <br/><h1 class='doclevel'>Test Suite : Suite za parcijalni</h1>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="5">Test Case parc-1: Admin dodaje predmet</th></tr>
+<tr><td colspan="5"><span class="label">Summary:</span><br /><p>
+	Administrator dodaje novi predmet. Ne smije dodati studenta. Mora odmah dodati bar jednog nastavnika.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>
+	Iz menija Entities odabrati Predmeti</p>
+</td><td><p>
+	Pojavi se forma sa vec postojecim predmetima</p>
+</td><td>Passed</td></tr><tr><td width="5">2</td><td><p>
+	Klik na taster Create a new Predmeti</p>
+</td><td><p>
+	Pojavi se forma za unos novog predmeta</p>
+</td><td>Passed</td></tr><tr><td width="5">3</td><td><p>
+	U polje Naziv unijeti naziv predmeta koji ne smije biti kraci od 3, ali ni duzi od 40 slova&nbsp;</p>
+</td><td><p>
+	Polje prihvata unos</p>
+</td><td>Passed</td></tr><tr><td width="5">4</td><td><p>
+	U polju studenti nista ne cekirati</p>
+</td><td><p>
+	Dozvoljava se da ovo polje ostane prazno</p>
+</td><td>Passed</td></tr><tr><td width="5">5</td><td><p>
+	U polje Nastavnici unijeti bar jednog nastavnika</p>
+</td><td><p>
+	Polje dozvoljava unos</p>
+</td><td>Failed</td></tr><tr><td width="5">6</td><td><p>
+	Klik na taster Save</p>
+</td><td><p>
+	Pojavi se forma sa postojecim predmetima i novim unesenim</p>
+</td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="4">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="4"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="4">Medium</td></tr>
+<tr><td colspan="5"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="4">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="4"> Build parcijalni test</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="4" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="4" ><b>Failed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="4" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="4" ><b>5.00</b></td></tr>
+<tr><td width="20%" valign="top">Execution notes</td><td  colspan="4" >U negativnom testu bih testirala Boundary Value Analysis za naziv predmeta sa manje od 3 slova, sa 3 slova, sa 4 slova, sa 39, sa 40, sa 41 slovo.</td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="5">Test Case parc-3: Admin mijenja prava korisnika</th></tr>
+<tr><td colspan="5"><span class="label">Summary:</span><br /><p>
+	Admin mijenja prava korisnika tako da ima tacno jednu ulogu. Ne moze mu ukinuti sve uloge, ni dodijeliti vise od jedne.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>
+	Iz menija Administration odabrati User Management</p>
+</td><td><p>
+	Pojavi se forma sa postojecim korisnicima</p>
+</td><td>Passed</td></tr><tr><td width="5">2</td><td><p>
+	Kod odabranog korisnika iz liste klinuti na taster Edit koji se nalazi pored toga korisnika</p>
+</td><td><p>
+	Pojavi se forma za izmjenu podataka tog korisnika</p>
+</td><td>Passed</td></tr><tr><td width="5">3</td><td><p>
+	U polju Profiles klik na samo jednu ulogu koju zelimo da taj korisnik ima</p>
+</td><td><p>
+	Dozvoljava se biranje jedne uloge</p>
+</td><td>Passed</td></tr><tr><td width="5">4</td><td><p>
+	Klik na taster Save</p>
+</td><td><p>
+	Prihvata se Save i pojavi se forma sa postojecim korisnica azurirana sa prethodno odradjenim promjenama</p>
+</td><td>Passed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="4">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="4"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="4">Medium</td></tr>
+<tr><td colspan="5"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="4">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="4"> Build parcijalni test</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="4" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="4" ><b>Passed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="4" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="4" ><b>2.00</b></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="5">Test Case parc-4: Admin mijenja prava korisnika negativan test</th></tr>
+<tr><td colspan="5"><span class="label">Summary:</span><br /><p>
+	Admin mijenja prava korisnika da ima samo jednu ulogu. Ne moze ukinuti uloge. Ne smije dodati vise od jedne.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td><td><span class="label">Execution Status:</span></td></tr><tr><td width="5">1</td><td><p>
+	U polju Profiles ostaviti korisnika bez ijedne uloge</p>
+</td><td><p>
+	Aplikacija ne dozvoljava da ostane prazno</p>
+</td><td>Failed</td></tr><tr><td width="5">2</td><td><p>
+	U polje Profiles korisniku dodijeliti vise uloga</p>
+</td><td><p>
+	Aplikacija ne dozvoljava vise uloga</p>
+</td><td>Failed</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="4">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="4"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="4">Medium</td></tr>
+<tr><td colspan="5"></td></tr><tr style="font-weight: bold;background: #EEE;text-align: left;"><td width="20%" valign="top">Execution Details</td><td colspan="4">&nbsp;</td></tr>
+<tr><td width="20%" valign="top">Build</td><td colspan="4"> Build parcijalni test</td></tr>
+<tr><td width="20%" valign="top">Tester</td><td  colspan="4" >admin</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution Result:</span></td><td  colspan="4" ><b>Failed</b></td></tr>
+<tr><td width="20%"><span class="label">Execution Mode:</span></td><td  colspan="4" ><b>Manual</b></td></tr>
+<tr><td width="20%"><span class="label">Execution duration (min):</span></td><td  colspan="4" ><b>2.00</b></td></tr>
+</table>
+</div>
+
+</body>
+</html>
