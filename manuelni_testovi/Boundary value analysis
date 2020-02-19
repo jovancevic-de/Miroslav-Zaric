@@ -1,0 +1,5 @@
+Boundary value analysis se odnosi na ispitivanje nekih granicnih vrednosti. 
+U ovom slucaju odnosi se na zahtev 1 gde postoji ogranicenje da naziv predmeta ne sme biti kraci od 3 slova, niti duzi od 40 slova.
+Potrebno je testirati granicne vrednosti da bi se utvrdilo koji od podataka ce proci,a koji ne.
+Naziv predmeta je potrebno testirati sa nazivom koji ima 2,3 i 4 slova za zahtev da mora biti kraci od 3 slova.
+Za zahtev da naziv predmeta ne sme biti duzi od 40 slova potrebno je testirati sa 39,40 i 41 slovo.
