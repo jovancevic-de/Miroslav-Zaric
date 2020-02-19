@@ -32,4 +32,4 @@ where naziv = 'WEB'
 select count(*), kurs.naziv from student
 join student_kurs on student.id = student_kurs.studentID
 join kurs on kurs.id = student.fakultetID
-group by kurs.naziv
+group by kursID
