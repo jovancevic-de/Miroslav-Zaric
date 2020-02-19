@@ -1,4 +1,4 @@
-package unittesting.student;
+package unittesting.parcijalni;
 
 public class StudentRepository {
 
