@@ -1,0 +1,4 @@
+Jedna od najcesce koriscenih metoda black box testiranja,
+u ovoj metodi test podaci se tako da ispitaju i ponasanje
+oko tih granica.ne prikladna je ako je priroda takva da se 
+ne mogu utvrditi granicne vrednosti kao i za boolean vrednosti
