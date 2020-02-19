@@ -1,4 +1,4 @@
-div[class="col-lg-4"]>*p.row-paragraph {
+div[class="col-lg-4"]>p.row-paragraph {
     color: green;
 }
 
