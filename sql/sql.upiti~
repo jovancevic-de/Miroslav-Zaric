@@ -1,0 +1,25 @@
+
+
+select student.* from student where student.godina_upisa=2015
+
+select fakultet.* from fakultet where fakultet.godina_osnivanja<1960
+
+select student.* from student
+join fakultet on fakultet.fakultetID=student.fakultet 
+where fakultet.naziv="FTN"
+
+select student.* from student
+join fakultet on fakultet.fakultetID=student.fakultet 
+where student.godina_upisa>2016 and fakultet.naziv="PMF"
+
+select student.* from student
+join student_kurs on studentID=student_kurs.student
+join kurs on student_kurs.kurs=kurs.kursID
+where kurs.naziv="WEB"
+
+select count(studentID) 
+from student 
+join student_kurs on studentID=student_kurs.student
+join kurs on student_kurs.kurs=kurs.kursID
+group by student_kurs.kurs
+

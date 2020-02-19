@@ -1,0 +1,11 @@
+div.col-lg-4>p.row-paragraph {
+    color:green;
+}
+
+h1,h2{
+    color:red;
+}
+
+*[class|="text"]{
+    color:orange!important
+}

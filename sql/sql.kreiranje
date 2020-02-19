@@ -1,0 +1,48 @@
+
+drop table if exists fakultet;
+
+create table fakultet  (
+	fakultetID integer auto_increment,
+    naziv varchar(20) not null,
+    godina_osnivanja integer not null,
+    primary key (fakultetID)
+    
+);
+
+drop table if exists student;
+
+create table student(
+	studentID integer auto_increment,
+    ime varchar(20) not null,
+    prezime varchar(20) not null,
+    godina_upisa integer not null,
+    fakultet int not null,
+    foreign key(fakultet) references fakultet(fakultetID),
+    primary key(studentID)
+    
+);
+
+drop table if exists kurs;
+
+create table kurs(
+	kursID integer auto_increment,
+    naziv varchar(20) not null,
+    broj_ESPB integer(15) not null,
+    fakultet int not null,
+    foreign key(fakultet) references fakultet(fakultetID),
+    primary key(kursID)
+    
+);
+
+
+drop table if exists student_kurs;
+
+create table student_kurs(
+	student_kursID integer auto_increment,
+    student int not null,
+    kurs int not null,
+    foreign key(student) references student(studentID),
+    foreign key(kurs) references kurs(kursID),
+    primary key(student_kursID)
+    
+);

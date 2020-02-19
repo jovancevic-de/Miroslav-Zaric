@@ -1,0 +1,14 @@
+insert into fakultet(naziv, godina_osnivanja) values("FTN", 1945);
+insert into fakultet(naziv, godina_osnivanja) values("PMF", 1955);
+
+
+insert into student(ime, prezime, godina_upisa, fakultet) values("Maja", "Tubic", 2015, 1);
+insert into student(ime, prezime, godina_upisa, fakultet) values("Milena", "Banjac", 2015, 1);
+insert into student(ime, prezime, godina_upisa, fakultet) values("Milan", "Milic", 2017, 2);
+
+insert into kurs(naziv, broj_ESPB, fakultet) values("WEB", 10, 1);
+insert into kurs(naziv, broj_ESPB, fakultet) values("Kurs1", 8, 1);
+
+insert into student_kurs(student, kurs) values(1,1);
+insert into student_kurs(student, kurs) values(2,1);
+
