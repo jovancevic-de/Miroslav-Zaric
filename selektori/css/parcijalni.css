@@ -1,0 +1,20 @@
+
+/*1. zadatak*/
+div[class="col-lg-4"] > p.row-paragraph{
+
+    color:green
+}
+
+/*2. zadatak*/
+
+h1, h2 {
+
+    color:red;
+}
+
+/*3. zadatak*/
+
+*[class|="text"]{
+    background-color: orange!important;
+}
+
