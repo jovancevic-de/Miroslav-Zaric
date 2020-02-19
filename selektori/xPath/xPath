@@ -1,0 +1,7 @@
+1. $x('//div[@id="myCarousel"]/child::div')
+
+2. $x('//parent::h1["Example headline"]')
+
+3. $x('//footer//p[@x>=0]')
+
+

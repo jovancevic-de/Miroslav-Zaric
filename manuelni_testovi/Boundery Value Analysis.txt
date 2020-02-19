@@ -1,0 +1,8 @@
+Boundery Value Analysis se moze primeniti na REQ#1 kod dodavanja novog predmeta gde su granicne vrednosti Naziva predmeta minimalno 3 a maksimalno 40 karaktera.
+Na datom primeru testirali bi kreiranje predmeta sa granicnim vrednostima: 2 karaktera u nazivu predmeta
+	3 karaktera u nazivu predmeta
+	4 karaktera u nazivu predmeta
+	npr 10 karaktera u nazivu predmeta
+	39 karaktera u nazivu predmeta
+	40 karkatera u nazivu predmeta
+	41 karakter u nazivu predmeta

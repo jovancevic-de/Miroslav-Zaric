@@ -3,7 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="unittesting.parcijalni.UnitServiceTest"/>
+      <class name="unittesting.parcijalni.StudentServiceTest"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="unittesting.parcijalni.StudentServiceTest">
+        <methods>
+          <include name="testStudentNoMany"/>
+          <include name="setUp"/>
+          <include name="testStudnet"/>
+          <include name="testStudentNotActiv"/>
+          <include name="testWithException"/>
+        </methods>
+      </class> <!-- unittesting.parcijalni.StudentServiceTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
