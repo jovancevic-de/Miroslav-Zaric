@@ -1,0 +1,63 @@
+drop table if exists falkutet;
+
+create table falkutet(
+	id int auto_increment not null,
+    naziv varchar(40) not null,
+    god_osnivanja int not null,
+    primary key(id)
+);
+
+drop table if exists student;
+
+create table student(
+	id int auto_increment not null,
+    ime varchar(40) not null,
+    prezime varchar(40) not null,
+    god_upisa int not null,
+    studentId int not null,
+    foreign key(studentId) references falkutet(id),
+    primary key(id)
+);
+drop table if exists kurs;
+
+create table kurs(
+	id int auto_increment not null,
+    naziv varchar(40) not null,
+    broj_ESPB int not null,
+    kursId int not null,
+    foreign key(kursId) references falkutet(id),
+    primary key(id)
+);
+
+drop table if exists student_kurs;
+
+create table student_kurs(
+	id int auto_increment not null,
+	studentId int not null,
+	kursId int not null,
+    foreign key(studentId) references student(id),
+	foreign key(kursId) references kurs(id),
+	primary key(id)
+
+);
+
+
+insert into falkutet(naziv, god_osnivanja) values ('FTN', 1970);
+insert into falkutet(naziv, god_osnivanja) values ('PMF', 1954);
+
+insert into student (ime, prezime, god_upisa, studentId) values ('pera', 'peric', 2015, 1);
+insert into student (ime, prezime, god_upisa, studentId) values ('sima', 'simic', 2018, 2);
+insert into student (ime, prezime, god_upisa, studentId) values ('uros', 'tizic', 2014, 1);
+insert into student (ime, prezime, god_upisa, studentId) values ('zoran', 'peric', 2015, 1);
+
+insert into kurs (naziv,broj_ESPB, kursId) values ('Web',234, 1);
+insert into kurs (naziv,broj_ESPB, kursId) values ('Web',235, 1);
+insert into kurs (naziv,broj_ESPB, kursId) values ('Matematika',234, 2);
+
+insert into student_kurs(studentId, kursId) values (1,2);
+insert into student_kurs(studentId, kursId) values (2,2);
+insert into student_kurs(studentId, kursId) values (3,1);
+insert into student_kurs(studentId, kursId) values (4,1);
+
+
+

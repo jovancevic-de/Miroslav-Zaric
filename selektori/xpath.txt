@@ -1,0 +1,4 @@
+$x('//div[@id = "myCarousel"]/child::div')
+
+
+3.$x('//footer/p[@x >=0]')
