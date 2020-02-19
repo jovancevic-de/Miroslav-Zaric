@@ -1,0 +1,11 @@
+1. zadatak 
+
+$x('//div[@id="myCarousel"]/child::div')
+
+2. zadatak
+
+$x('//*[contains(text(), "Example headline")]//parent::h1')
+
+3. zadatak
+
+$x('//footer/descendant::p[@x>=0]') 
